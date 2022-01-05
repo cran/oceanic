@@ -1,4 +1,4 @@
-#' oceanic
+#' idfocean
 #' @description Return The Pacific Ocean(PAC), Indian Ocean(IND) or Atlantic Ocean(ATL) of your coordinate.
 #' @import sf
 #' @param lon Input the longitude.
@@ -6,9 +6,9 @@
 #' @return the ocean of \code{lon} and \code{lat}.
 #' @export
 #' @examples
-#' oceanic(125,20)
+#' idfocean(125,20)
 
-oceanic <- function(lon,lat){
+idfocean <- function(lon,lat){
   #PAC
   p1 = list(rbind(c(-180,-70),c(-70,-70),c(-70,5),c(-77,7.75),c(-79,9.25),c(-81,8.5),c(-82,8.5),c(-91,17.5),c(-101,17.5),c(-101,70),c(-180,70),c(-180,-70)))
   p2 = list(rbind(c(150,-70),c(180,-70),c(180,70),c(99,70),c(99,8.5),c(103,2.5),c(103,-2.5),c(106,-6),c(109,-7.5),c(113.46667,-8),c(129,-8),c(129,-15),c(150,-28),c(150,-70)))
