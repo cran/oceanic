@@ -1,4 +1,4 @@
-#' idfocean
+#' @title idfocean
 #' @description Return The Pacific Ocean(PAC), Indian Ocean(IND) or Atlantic Ocean(ATL) of your coordinate.
 #' @import sf
 #' @param lon Input the longitude.

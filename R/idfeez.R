@@ -1,4 +1,4 @@
-#' idfeez
+#' @title idfeez
 #' @description This function allows you to identify location in which EEZ from a numeric vector.
 #' @param lon Input the longitude.
 #' @param lat Input the latitude.
