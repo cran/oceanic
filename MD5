@@ -1,13 +1,13 @@
-b39ecbd43096c61f44cf2a7c8fb5dc45 *DESCRIPTION
+3c7a5d55bea87a238103c7be3c25f4fb *DESCRIPTION
 a17ed8feb886f1b2cdc478b2568b5b60 *NAMESPACE
 515bfa0588dfe6c77111580c2267c8f0 *R/data.R
-3fba3cfc50ffa1e48775e98d9ca7b0cf *R/dotplot.R
+931534fb1994a2b44ed0f5f9989befe8 *R/dotplot.R
 1310af583ccdaf4eaca1ae8d177bc478 *R/idfcode.R
 8852b0de231612687532f58aa9881eff *R/idfeez.R
 51623a09e9476e8d0098a40c595f3fd1 *R/idfland.R
 8ed2bc4c62489482b48fa60b68f429fb *R/idfocean.R
 3d3613307eb91e4da6014a2cd86e7c0f *data/eez_rg.rda
-54dc7390d42484bc96e2b114154b7940 *man/dotplot.Rd
+cd2dd51d35a60c055618556c0214dd97 *man/dotplot.Rd
 7b6fc7f7e8ee7d646db2e5328cf81c11 *man/eez_rg.Rd
 62da0cca04266644ce8f904aac065a4e *man/idfcode.Rd
 56314e285182edf427c69f5cd6dce938 *man/idfeez.Rd

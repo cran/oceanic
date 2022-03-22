@@ -5,6 +5,9 @@
 #' @param map default is "ALL", Other possible options is "PAC", "IND" and "ATL".
 #' @param eez default is TRUE, when TRUE show the EEZ map.
 #' @param grid default is FALSE, when TRUE show the 5 degree grid.
+#' @param color default is "#FF0000", define the color of points.
+#' @param size default is 1, define the size of points.
+#' @param shape default is 16, define the shape of points.
 #' @return the plot of \code{lona} and \code{lata}.
 #' @export
 #' @import sf
@@ -17,7 +20,7 @@
 #' @examples
 #' dotplot(141,23)
 
-dotplot <- function(lona,lata,map="ALL",eez=TRUE,grid=FALSE){
+dotplot <- function(lona,lata,map="ALL",eez=TRUE,grid=FALSE,color="#FF0000", size=1 ,shape=16){
 long <- lat <- group <- NULL
 file<-data.frame(lona=lona,lata=lata)
 eezdata <- get("eez_rg")
@@ -49,9 +52,9 @@ if(map=="PAC" | map=="ALL"){
           geom_vline(xintercept = seq(min(lonseq),max(lonseq),5),lwd=0.3,col="grey",lty=a0)+
           geom_hline(yintercept = seq(min(latseq),max(latseq),5),lwd=0.3,col="grey",lty=a0)+
 		  geom_polygon(aes(x = long, y = lat, group = group), alpha=a1 ,fill="#FFFFBB", color=a2, data=uk_eez_df)+
-	      geom_polygon(data=world.data,aes(x=long, y=lat, group=group),fill = "#000000" , colour="#000000", size= 1.5)+
+	      geom_polygon(data=world.data,aes(x=long, y=lat, group=group),fill = "#000000" , colour="#000000", size= 1.2)+
 	      geom_polygon(data=world.data,aes(x=long, y=lat, group=group),fill = "#73C000" , colour="#73C000")+
-          geom_point(aes(x=lona, y=lata), colour="red", data=file)+
+          geom_point(aes(x=lona, y=lata), colour=color, size=size, data=file, pch=shape)+
           coord_cartesian(xlim=c(min(lonseq),max(lonseq)),ylim=c(min(latseq),max(latseq)),expand=0) +
           scale_y_continuous( "", breaks=latseq, labels=latseq2) +
           scale_x_continuous( "", breaks=lonseq, labels=lonseq2) +

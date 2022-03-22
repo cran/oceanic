@@ -4,7 +4,16 @@
 \alias{dotplot}
 \title{dotplot}
 \usage{
-dotplot(lona, lata, map = "ALL", eez = TRUE, grid = FALSE)
+dotplot(
+  lona,
+  lata,
+  map = "ALL",
+  eez = TRUE,
+  grid = FALSE,
+  color = "#FF0000",
+  size = 1,
+  shape = 16
+)
 }
 \arguments{
 \item{lona}{Input the longitude.}
@@ -16,6 +25,12 @@ dotplot(lona, lata, map = "ALL", eez = TRUE, grid = FALSE)
 \item{eez}{default is TRUE, when TRUE show the EEZ map.}
 
 \item{grid}{default is FALSE, when TRUE show the 5 degree grid.}
+
+\item{color}{default is "#FF0000", define the color of points.}
+
+\item{size}{default is 1, define the size of points.}
+
+\item{shape}{default is 16, define the shape of points.}
 }
 \value{
 the plot of \code{lona} and \code{lata}.
