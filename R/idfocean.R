@@ -22,5 +22,6 @@ idfocean <- function(lon,lat){
   d_multi<-st_multipoint(x = d_matrix)
   d<-st_cast(st_sfc(d_multi), "POINT")
   oc <- ifelse(st_intersects(d, p, sparse = FALSE)==TRUE,"PAC",ifelse(st_intersects(d, i, sparse = FALSE)==TRUE,"IND",ifelse(st_intersects(d, a, sparse = FALSE)==TRUE,"ATL","-")))
+  oc <- as.character(oc)
   return (oc)
 }

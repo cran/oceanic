@@ -5,7 +5,7 @@
 \alias{eez_rg}
 \title{Eez Coefficients}
 \format{
-A data.frame with 2 variables: \code{geneName}, \code{coef}
+eez_rg data.frame with 2 variables: \code{geneName}, \code{coef}
 }
 \usage{
 eez_rg
