@@ -1,13 +1,14 @@
-428b17a86b65e4328ff1654464c86510 *DESCRIPTION
-d986e6ec2c6ccd64b3855000ca532092 *NAMESPACE
+9453f68e4d53dad1b526bc9da965c22c *DESCRIPTION
+d7e096ba6fd380dad125a541a2d54984 *NAMESPACE
 08862fcb1a81e7e320411b17a9232a43 *R/data.R
 931534fb1994a2b44ed0f5f9989befe8 *R/dotplot.R
 1310af583ccdaf4eaca1ae8d177bc478 *R/idfcode.R
 8852b0de231612687532f58aa9881eff *R/idfeez.R
 51623a09e9476e8d0098a40c595f3fd1 *R/idfland.R
 f5a1057736c55d981c87af966fd37ae4 *R/idfocean.R
+4060fbaa04f4501bb3aedc11a0e1066f *R/idfoutliers.R
 7561ca5cd5316158c0e3630402a54e8d *R/idfport.R
-5e9ce051580e3ba1d0b99403265a9339 *R/sixtytoten.R
+7868904b17644beced4eb353ed2f3908 *R/sixtytoten.R
 3d3613307eb91e4da6014a2cd86e7c0f *data/eez_rg.rda
 666033acf304a7425155651a3ba57bdb *data/port.rda
 cd2dd51d35a60c055618556c0214dd97 *man/dotplot.Rd
@@ -16,6 +17,7 @@ cd2dd51d35a60c055618556c0214dd97 *man/dotplot.Rd
 56314e285182edf427c69f5cd6dce938 *man/idfeez.Rd
 93224d43909c42a35f763fb030a1cca6 *man/idfland.Rd
 b5f0ee1825d5805bf024cfeb304e34dc *man/idfocean.Rd
+658e7b5911dfacb9ed3071f4d31f3011 *man/idfoutliers.Rd
 248509cb1a9f18bf36af7433a9b50831 *man/idfport.Rd
 e321864eec2bee6da2f79b66c5eaa70f *man/port.Rd
-4cb239dcb8ccc6553192407a8909acad *man/sixtytoten.Rd
+fded4d8de96e0838ab372f9eb5824ee1 *man/sixtytoten.Rd

@@ -4,16 +4,14 @@
 \alias{sixtytoten}
 \title{sixtytoten}
 \usage{
-sixtytoten(lon, lat)
+sixtytoten(num)
 }
 \arguments{
-\item{lon}{Input the longitude.}
-
-\item{lat}{Input the latitude.}
+\item{num}{Input a value of longitude or latitude.}
 }
 \description{
 This function allows you to transfer the coordinate system from sexagesimal to decimal
 }
 \examples{
-sixtytoten(121.49,25.58)
+sixtytoten(121.49)
 }
