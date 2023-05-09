@@ -5,23 +5,25 @@
 #' @export
 #' @import sf
 #' @import sp
-#' @import rgdal
 #' @examples
 #' idfport(121.8006,25.14065)
 
 
-idfport<-function(lon,lat){
+idfport <- function(lon,lat) {
 
-loc<-data.frame(lon=lon,lat=lat)
-sptacsat<- SpatialPoints(coordinates(loc))
+  port <- get("port")
+  port_sf <- st_as_sf(port)
+  port_sf <- st_set_crs(port_sf,NA)
 
-proj4string(sptacsat) <-suppressWarnings(CRS("+init=epsg:4326"))
+  point <- data.frame(lon=lon, lat=lat)
+  point_sf <- st_as_sf(point, coords = c("lon", "lat"))
 
-portdata <- get("port")
-sptacsat_O<- suppressWarnings(spTransform(sptacsat, CRS(proj4string(portdata))))
-idx<- over(sptacsat_O,portdata)
-loc2<-idx$id
-return(loc2)
+
+  result <- suppressWarnings(st_intersection(port_sf, point_sf))
+
+  if (nrow(result) > 0) {
+    return(result$id)
+  } else {
+    return("-")
+  }
 }
-
-

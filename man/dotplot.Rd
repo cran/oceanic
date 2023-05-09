@@ -8,7 +8,6 @@ dotplot(
   lona,
   lata,
   map = "ALL",
-  eez = TRUE,
   grid = FALSE,
   color = "#FF0000",
   size = 1,
@@ -22,8 +21,6 @@ dotplot(
 
 \item{map}{default is "ALL", Other possible options is "PAC", "IND" and "ATL".}
 
-\item{eez}{default is TRUE, when TRUE show the EEZ map.}
-
 \item{grid}{default is FALSE, when TRUE show the 5 degree grid.}
 
 \item{color}{default is "#FF0000", define the color of points.}
@@ -36,7 +33,7 @@ dotplot(
 the plot of \code{lona} and \code{lata}.
 }
 \description{
-This function allows you to draw data distribution geographically with EEZ map Function from a numeric vector.
+This function allows you to draw data distribution geographically from a numeric vector.
 }
 \examples{
 dotplot(141,23)

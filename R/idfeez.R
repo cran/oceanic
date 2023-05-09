@@ -6,7 +6,7 @@
 #' @export
 #' @import sf
 #' @import sp
-#' @import rgdal
+#' @import methods
 #' @examples
 #' idfeez(141,23)
 
@@ -20,8 +20,9 @@ sptacsat<- SpatialPoints(coordinates(loc))
 proj4string(sptacsat) <-suppressWarnings(CRS("+init=epsg:4326"))
 
 eezdata <- get("eez_rg")
-sptacsat_O<- suppressWarnings(spTransform(sptacsat, CRS(proj4string(eezdata))))
-idx<- over(sptacsat_O,eezdata)
+eez_rg3 <- as(eezdata, "Spatial")
+proj4string(eez_rg3) <-suppressWarnings(CRS("+init=epsg:4326"))
+idx<- over(sptacsat,eez_rg3)
 loc2<-idx$ISO_3digit
 
 if(ac){
@@ -32,5 +33,4 @@ if(ac){
 return(loc2)
 
 }
-
 
