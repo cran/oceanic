@@ -22,7 +22,7 @@ idfport <- function(lon,lat) {
   result <- suppressWarnings(st_intersection(port_sf, point_sf))
 
   if (nrow(result) > 0) {
-    return(result$id)
+    return(result$id[1])
   } else {
     return("-")
   }
