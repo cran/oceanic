@@ -10,5 +10,5 @@
 #'
 #' define the position of port in the world
 #'
-#' @format port data.frame with 2 variables: \code{row.names}, \code{id}
-"port"
+#' @format port_sf data.frame with 2 variables: \code{row.names}, \code{id}
+"port_sf"
